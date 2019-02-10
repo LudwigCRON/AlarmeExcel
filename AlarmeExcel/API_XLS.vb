@@ -100,7 +100,7 @@ Module API_XLS
         mail.To.Add(mailAddress)
         Dim SMTPserver As New System.Net.Mail.SmtpClient("smtp.gmail.com")
         SMTPserver.Port = 587
-        SMTPserver.Credentials = New System.Net.NetworkCredential("sedi.ati.conference@gmail.com", "s.a.c2013")
+        SMTPserver.Credentials = New System.Net.NetworkCredential("your.mail@gmail.com", "your password")
         SMTPserver.EnableSsl = True
         SMTPserver.DeliveryMethod = SmtpDeliveryMethod.Network
         SMTPserver.Send(mail)
