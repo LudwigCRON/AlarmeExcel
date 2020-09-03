@@ -90,17 +90,17 @@ Module API_XLS
         End If
     End Sub
 
-    Public Sub Mailer(ByRef F As GUI, ByVal mailAddress As String, ByVal mailSubject As String)
+    Public Sub Mailer(ByRef F As GUI, ByVal mailAddress As String, ByVal mailSubject As String, ByVal smtpAddress As String, ByVal smtpPort As Integer, ByVal senderAddress As String, ByVal senderPswd As String)
         Dim mail As New System.Net.Mail.MailMessage
-        Dim sender As New MailAddress("alarme@sedi-ati.com", mailSubject)
+        Dim sender As New MailAddress("alarme@quality.com", mailSubject)
         mail.From = sender
         mail.Subject = mailSubject
         mail.Priority = MailPriority.High
         mail.Body = F.Output.Text()
         mail.To.Add(mailAddress)
-        Dim SMTPserver As New System.Net.Mail.SmtpClient("smtp.gmail.com")
-        SMTPserver.Port = 587
-        SMTPserver.Credentials = New System.Net.NetworkCredential("your.mail@gmail.com", "your password")
+        Dim SMTPserver As New System.Net.Mail.SmtpClient(smtpAddress)
+        SMTPserver.Port = smtpPort
+        SMTPserver.Credentials = New System.Net.NetworkCredential(senderAddress , senderPswd)
         SMTPserver.EnableSsl = True
         SMTPserver.DeliveryMethod = SmtpDeliveryMethod.Network
         SMTPserver.Send(mail)

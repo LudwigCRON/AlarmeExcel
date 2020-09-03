@@ -73,7 +73,7 @@ Public Class GUI
             ' The operation completed normally.
             WriteCombo(Me)
             Try
-                AlarmeExcel.Mailer(Me, Me.mailAddress, Me.mailSubject)
+                AlarmeExcel.Mailer(Me, My.Settings.mailAddress, My.Settings.mailSubject, My.Settings.smtpAddress, CInt(My.Settings.smtpPort), My.Settings.senderAddress, My.Settings.senderPassword)
                 System.Windows.MessageBox.Show("email bien envoyée")
             Catch ex As Exception
                 System.Windows.MessageBox.Show(ex.Message)
