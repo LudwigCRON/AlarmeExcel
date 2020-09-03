@@ -77,6 +77,54 @@ Namespace My
                 Me("mailSubject") = value
             End Set
         End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Dev Mail App")>  _
+        Public Property senderAddress() As String
+            Get
+                Return CType(Me("senderAddress"),String)
+            End Get
+            Set
+                Me("senderAddress") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Dev Mail App")>  _
+        Public Property senderPassword() As String
+            Get
+                Return CType(Me("senderPassword"),String)
+            End Get
+            Set
+                Me("senderPassword") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Dev Mail App")>  _
+        Public Property smtpAddress() As String
+            Get
+                Return CType(Me("smtpAddress"),String)
+            End Get
+            Set
+                Me("smtpAddress") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("587")>  _
+        Public Property smtpPort() As Integer
+            Get
+                Return CType(Me("smtpPort"),Integer)
+            End Get
+            Set
+                Me("smtpPort") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

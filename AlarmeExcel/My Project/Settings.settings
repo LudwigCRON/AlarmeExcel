@@ -8,5 +8,17 @@
     <Setting Name="mailSubject" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dev Mail App</Value>
     </Setting>
+    <Setting Name="senderAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dev Mail App</Value>
+    </Setting>
+    <Setting Name="senderPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dev Mail App</Value>
+    </Setting>
+    <Setting Name="smtpAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dev Mail App</Value>
+    </Setting>
+    <Setting Name="smtpPort" Type="System.Integer" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

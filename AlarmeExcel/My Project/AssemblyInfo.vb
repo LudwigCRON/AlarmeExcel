@@ -12,9 +12,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("AlarmeVB")> 
 <Assembly: AssemblyDescription("Send Mail when it scans excel files for alarme")> 
-<Assembly: AssemblyCompany("SEDI-ATI")> 
+<Assembly: AssemblyCompany("CL Consulting")> 
 <Assembly: AssemblyProduct("")> 
-<Assembly: AssemblyCopyright("Copyright ©  2013")> 
+<Assembly: AssemblyCopyright("Copyright ©  2020")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(True)> 
